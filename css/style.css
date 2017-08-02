@@ -64,7 +64,7 @@
 
 @media (max-width: 640px) {
     .header__logo, .header__link {
-        margin: 0 15px;
+        margin: 0 30px;
     }
 }
 
@@ -84,7 +84,7 @@
 @media (max-width: 640px) {
     .page {
         width: auto;
-        padding: 0 15px;
+        padding: 0 30px;
     }
 }
 
