@@ -1,0 +1,172 @@
+* {
+    font-family: 'Hero New', Arial, sans-serif;
+    color: #494948;
+    margin: 0;
+    padding: 0;
+}
+
+.html,
+.body {
+    height: 100%;
+    min-width: 320px;
+}
+
+.content {
+    width: 790px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 106px;
+}
+
+.header__background {
+    width: 100%;
+    height: 100%;
+    background-color: #fdcd2b;
+}
+
+.header__content {
+    width: 1024px;
+}
+
+.header__content::before, .header__content::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.header__logo {
+    width: 60px;
+    height: 106px;
+    float: left;
+    background: no-repeat 50% 50% url(../img/logo-veon.png);
+    background-size: contain;
+    margin: 0 40px;
+}
+
+.header__link {
+    display: inline-block;
+    height: 106px;
+    float: right;
+    margin: 0 40px;
+}
+
+.header__link-content {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 106px;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .header__logo, .header__link {
+        margin: 0 15px;
+    }
+}
+
+
+/* Page */
+
+.page {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.page__header {
+    font-size: 35px;
+    margin: 36px 0;
+}
+
+@media (max-width: 640px) {
+    .page {
+        width: auto;
+        padding: 0 15px;
+    }
+}
+
+
+/* Blog post */
+
+.blog-post {
+    margin-bottom: 65px;
+}
+
+.blog-post__date {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+
+.blog-post__image {
+    height: auto;
+    max-width: 100%;
+    background-color: #f5f5f5;
+}
+
+.blog-post__header {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.blog-post__content {
+    font-size: 17px;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+.blog-post__social {
+    margin: 20px 0;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 40px;
+    background: black;
+}
+
+.footer__content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    width: 60px;
+    height: 80px;
+    margin: 3px auto 40px;
+    flex-shrink: 0;
+    display: block;
+    background: no-repeat 50% 50% url(../img/logo-white.png);
+    background-size: contain;
+}
+
+.footer__block {
+    flex-shrink: 1;
+    margin-top: auto;
+}
+
+.footer__text {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+@media (min-width: 768px) {
+    .footer__content {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+
+    .footer__logo {
+        margin: 0;
+        margin-right: 30px;
+    }
+}
