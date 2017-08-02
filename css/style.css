@@ -118,6 +118,31 @@
     margin: 20px 0;
 }
 
+.blog-post__cut-content {
+    display: inline;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.blog-post__cut-content_invisible {
+    display: none;
+}
+
+.blog-post__cut-description {
+    margin: 20px 0;
+}
+
+.blog-post__cut-description_invisible {
+    display: none;
+}
+
+.blog-post__cut-link {
+    font-size: 17px;
+    font-weight: 100;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .blog-post__social {
     margin: 20px 0;
 }
